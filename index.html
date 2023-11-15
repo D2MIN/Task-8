@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,57 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="skript/script.js" defer></script>
 </head>
+
 <body>
     <div class="content">
         <div class="button_block">
-            <button type="button" class="button_out" id="btn_out">Регистрация</button>
-            <button type="button" class="button_inp" id="btn_inp">Вход</button>
+            <button type="button" class="button_form" id="btn_form">Форма</button>
+        </div>
+        <div class="bigtext">
+            <h1>Big text</h1>
+            <div class="text">
+                Lorem ipsum dolor si t amet consectetur adipi sicing elit. Autem vero vel ac cusamus modi odio, ipsa itaque dolores totam maxime ei us nesciunt in molestias. Incidunt ipsa tenetur voluptate illo dolorem molestias.
+            </div>
+            <br>
+            <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum officia labore illum? Libero iure sint mollitia quos qui recusandae nobis, praesentium commodi sapiente at atque ullam vel quam rem, deserunt quia temporibus quibusdam! Quos
+                dolorem eius velit. Odit deserunt facilis accusantium quisquam omnis deleniti, aspernatur ullam cupiditate, iure, eligendi veritatis voluptas in? Veniam culpa provident nihil itaque nobis aut nostrum, ex ad velit, iste iusto repellendus
+                tempora ipsa quasi? Corporis eius harum asperiores odit nesciunt. Odit sapiente aliquid ipsum voluptatem, blanditiis impedit nam illo expedita earum veritatis facere at soluta cupiditate. Provident reprehenderit facilis distinctio soluta
+                delectus ullam incidunt.
+            </div>
+            <br>
+            <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatum officia labore illum? Libero iure sint mollitia quos qui recusandae nobis, praesentium commodi sapiente at atque ullam vel quam rem, deserunt quia temporibus quibusdam! Quos
+                dolorem eius velit. Odit deserunt facilis accusantium quisquam omnis deleniti, aspernatur ullam cupiditate, iure, eligendi veritatis voluptas in? Veniam culpa provident nihil itaque nobis aut nostrum, ex ad velit, iste iusto repellendus
+                tempora ipsa quasi? Corporis eius harum asperiores odit nesciunt. Odit sapiente aliquid ipsum voluptatem, blanditiis impedit nam illo expedita earum veritatis facere at soluta cupiditate. Provident reprehenderit facilis distinctio soluta
+                delectus ullam incidunt.
+            </div>
         </div>
     </div>
 
     <div class="popup_block" id="popup">
         <div class="popup">
             <div class="close" id="popup_close">
-                X
+                <p>X</p>
             </div>
             <div class="popup_content" id="popup_content">
                 <form>
-                    Введите вашу почту:
-                    <input type="email" name="" id="" placeholder="test_mail@gmail.com" required>
-                    <br>
-                    Введите ваш логин:
-                    <input type="text" placeholder="Ваше имя" required>
-                    <br>
-                    <input type="submit" value="Войти" class="popup_inp" id="popup_inp">
+                    Введите ваше имя:
+                    <input type="text" placeholder="Ваше имя" required id="name"> Введите вашу почту:
+                    <input type="email" id="email" placeholder="test_mail@gmail.com" required> Введите ваш номер телефона:
+                    <input type="tel" id="number" placeholder="+7 123 456 78 90" required> Введите название вашей компании:
+                    <input type="text" id="company" placeholder="Google" required> Введите ваше сообщение:
+                    <textarea id="text" cols="30" rows="7"></textarea>
+                    <label>
+                        <input type="checkbox" id="check" required>
+                        Вы даёте согласие на обработку ваших персональных данных
+                    </label>
+                    <input type="submit" value="Отправить" class="popup_inp" id="popup_inp" required>
                     <br>
                 </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>

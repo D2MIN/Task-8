@@ -1,10 +1,22 @@
+.invisability {
+  position: fixed;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   background-color: antiquewhite;
 }
+body .content .bigtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 100px;
+}
 body .content .button_block {
-  height: 800px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +32,7 @@ body .content .button_block button {
 body .content .button_block button:hover {
   background-color: rgba(165, 68, 68, 0.105);
 }
-body .content .button_block .button_inp {
+body .content .button_block .button_form {
   padding: 20px 70px;
 }
 body .content .button_block .button_out {
@@ -41,31 +53,30 @@ body .popup_block {
   align-items: center;
 }
 body .popup_block .popup {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: rgb(255, 255, 255);
-  height: 500px;
   width: 600px;
   padding: 10px;
   border-radius: 20px;
 }
 body .popup_block .popup .close {
-  color: black;
   display: inline;
   float: right;
   cursor: pointer;
+  color: black;
 }
 body .popup_block .popup .close:hover {
   color: brown;
 }
 body .popup_block .popup .popup_content {
-  height: 500px;
+  min-height: 500px;
   max-width: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: brown;
-  padding: 20px;
+  padding: 10px;
 }
 body .popup_block .popup .popup_content form {
   display: flex;
@@ -74,11 +85,17 @@ body .popup_block .popup .popup_content form {
   flex-direction: column;
 }
 body .popup_block .popup .popup_content input {
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   font-size: 22px;
 }
 body .popup_block .popup .popup_content .popup_inp {
   padding: 20px 80px;
   border-radius: 20px;
+  border: 2px solid brown;
+  color: brown;
+}
+body .popup_block .popup .popup_content textarea {
+  font-size: 20px;
+  resize: none;
 }/*# sourceMappingURL=style.css.map */
